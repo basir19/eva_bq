@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Eva Jones Design</title>
+<meta name="description" content="Contact Eva Jones. Graphic and web designer living in the Denver area.">
+<meta name="keywords" content="graphic design, web designer, denver desinger, photoshop, dreamweaver, Colorado, contact Eva Jones">
+<style type="text/css">
+@import url("CSS/stylesheet.css");
+body {
+	background-image: url(images/bkgdContact.jpg);
+}
+</style>
+<!-- Mobile -->
+<link href="CSS/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:800px)">
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="logo"><img src="images/logo.png" width="220" height="103" alt="Eva Jones Design"></div>
+<nav>
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href="index.html">home</a>    </li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="portfolio.html">portfolio</a>    </li>
+    <li><a href="contact.html">contact</a></li>
+    <li><a href="logIn.html">admin</a></li>
+  </ul>
+</nav>
+<header>
+  <h1>contact <span class="fancy">Eva Jones</span></h1>
+</header>
+<section>
+  <form name="form1" method="post" action="admin.php">
+      
+    <span id="userNameTextField">
+      <label for="userName"></label>
+      <input type="text" name="userName" id="userName">
+      <span class="textfieldRequiredMsg">A value is required.</span></span>
+      
+    <p><span id="passwordTextField">
+    <label for="password"></label>
+    <input type="password" name="password" id="password">
+       <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+    </p>
+    
+  </form>
+  <p>&nbsp;</p>
+</section>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>
+<h2>&nbsp;</h2>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var sprytextfield1 = new Spry.Widget.ValidationTextField("nameTextField", "none", {hint:"Your Name", validateOn:["blur"]});
+var sprytextfield2 = new Spry.Widget.ValidationTextField("emailTextField", "email", {hint:"Your Email", validateOn:["blur"]});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("messageTextArea", {minChars:1, maxChars:500, counterType:"chars_remaining", counterId:"countmessageTextArea", validateOn:["blur"], hint:"Your Message"});
+</script>
+</body>
+</html>
